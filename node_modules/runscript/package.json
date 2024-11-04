@@ -1,0 +1,48 @@
+{
+  "name": "runscript",
+  "version": "1.6.0",
+  "description": "Run script easy!",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "npm run lint && egg-bin test",
+    "test-cov": "egg-bin cov",
+    "lint": "eslint index.js test --fix",
+    "ci": "npm run lint && npm run test-cov",
+    "contributor": "git-contributor"
+  },
+  "dependencies": {
+    "is-type-of": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.8",
+    "autod": "^3.1.2",
+    "egg-bin": "^1.11.1",
+    "eslint": "^4.19.1",
+    "eslint-config-egg": "^6.0.0",
+    "git-contributor": "^2.1.5",
+    "typescript": "^3.9.3"
+  },
+  "homepage": "https://github.com/node-modules/runscript",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/node-modules/runscript.git",
+    "web": "https://github.com/node-modules/runscript"
+  },
+  "bugs": {
+    "url": "https://github.com/node-modules/runscript/issues"
+  },
+  "keywords": [
+    "runscript",
+    "run-script",
+    "npm run"
+  ],
+  "engines": {
+    "node": ">=4.2.3"
+  },
+  "author": "fengmk2 <fengmk2@gmail.com> (https://github.com/fengmk2)",
+  "license": "MIT"
+}
